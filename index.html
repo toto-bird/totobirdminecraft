@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - TotobirdMC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link href='//fonts.googleapis.com/css?family=ZCOOL+KuaiLe|ZCOOL+KuaiLe:400,700|ZCOOL+KuaiLe:4:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body {
+  font-family: "ZCOOL KuaiLe", serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero {
+  text-align: center;
+  position: relative;
+  height: auto;
+  padding-bottom: 80px;
+  background: #00AA55 url("https://miguelquispe.com/pen//hero.jpg") center top no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+}
+.hero h1 {
+  margin: 50px 0 20px;
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-size: 35px;
+}
+.hero h1 span {
+  font: 700 60px/1 "ZCOOL KuaiLe", cursive;
+  display: block;
+}
+.hero h2 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 20px;
+}
+@media only screen and (min-width: 37.5em) {
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero h1 span {
+    font-size: 76px;
+  }
+  .hero h2 {
+    width: 76%;
+    font-size: 18px;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 96%;
+  max-width: 1120px;
+}
+
+.section {
+  padding: 60px 0;
+}
+.section__title {
+  font-size: 24px;
+  color: #E53E32;
+  text-align: center;
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  margin: 14px 0;
+}
+.section__intro {
+  display: block;
+  text-align: center;
+  margin: 0 5% 30px;
+}
+@media only screen and (min-width: 43.75em) {
+  .section__intro {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+.section--cta {
+  color: #454545;
+  background: #f1f1f1;
+}
+
+.box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex: 1 0 100%;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+.box__grid {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.box__title {
+  font-family: "ZCOOL KuaiLe", sans-serif;
+}
+.box__more {
+  color: #ff4e5c;
+}
+.box__content {
+  color: #454545;
+  text-align: center;
+  padding: 20px;
+}
+.box__content > i {
+  color: #3BD06B;
+}
+.box__content:hover .box__more {
+  color: #ff3545;
+}
+.box__content:hover .box__more i {
+  padding-left: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+@media only screen and (min-width: 43.75em) {
+  .box {
+    -webkit-box-flex: 0;
+            flex: 0 0 30%;
+  }
+}
+
+.btn {
+  color: #fff;
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 12px 18px;
+  border-radius: 100px;
+  background: #3EC2E5;
+}
+.btn:hover {
+  background: #ff3545;
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  background: #FF5733;
+}
+.footer p {
+  opacity: .65;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+.slider::before, .slider::after {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 15s linear infinite;
+          animation: scroll 15s linear infinite;
+  display: -webkit-box;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+</style>
+</head>
+<body translate="no">
+<section class="hero">
+<h1>Welcome To
+<span id="obfustxt">Totobird Minecraft</span></h1>
+<strong></em>IP: totobird.aternos.me</em></strong>
+</section>
+<section class="section">
+<div class="wrapper">
+<h2 class="section__title">This webpage is still in development.</h2>
+<p class="section__intro">
+Welcome to&nbsp;<strong>Totobird Minecraft</strong>.<br />Here you can download <em>Data Packs</em>,&nbsp;<em>Resource Packs</em>,&nbsp;&nbsp;and&nbsp;<em>Custom Maps</em>.
+</p>
+<div class="box__grid">
+<article class="box"><a class="box__content" href=""><i class="fa fa-cubes fa-3x"></i><h3 class="box__title">Data Packs</h3><p>Enjoy playing with game-changing features.<br /></p><span class="box__more">Go <i class="fa fa-arrow-right"></i></span></a></article>
+<article class="box"><a class="box__content" href=""><i class="fa fa-image fa-3x"></i><h3 class="box__title">Resource Packs</h3><p>Minecraft but with a whole new look and feel.<br /></p><span class="box__more">Go <i class="fa fa-arrow-right"></i></span></a></article>
+<article class="box"><a class="box__content" href="/cdn-cgi/l/email-protection#9beff4eff4f9f2e9ffdbebe9f4fce9faf6f6fee9b5f5feef"><i class="fa fa-map fa-3x"></i><h3 class="box__title">Custom Maps</h3><p>Create and adventure, play a game, or fight some mobs. You name it!</p><span class="box__more">Go <i class="fa fa-arrow-right"></i></span></a></article>
+</div>
+</div>
+</section>
+
+<br><br>
+<div class="footer">
+<p>&copy; 2019 Totobird</p>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script id="rendered-js">
+function randkey(len) {
+  var text = "";
+  var possible = "-+=~<>";
+  for (var i = 0; i < len; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  return text;
+}
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+while (True) {
+  document.getElementById("obfustxt").innerHTML = randkey(5)+" TOTOBIRD "+randkey(5);
+  sleep(0.05);
+}
+    </script>
+</body>
+</html>
